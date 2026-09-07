@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap');
+
+:root {
+  --black: #0A0A0A;
+  --black-soft: #1A1A1A;
+  --gold: #C9A84C;
+  --gold-dark: #B8962E;
+  --white: #FFFFFF;
+  --white-soft: #F5F5F5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: 'Jost', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.gold { color: var(--gold); }
+.bg-gold { background-color: var(--gold); }
+.bg-black { background-color: var(--black); }
+.bg-black-soft { background-color: var(--black-soft); }
+
+.btn-gold {
+  background-color: var(--gold);
+  color: var(--black);
+  padding: 14px 32px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-gold:hover {
+  background-color: var(--gold-dark);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--gold);
+  padding: 14px 32px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border: 1px solid var(--gold);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-outline:hover {
+  background-color: var(--gold);
+  color: var(--black);
+}
+
+.divider-gold {
+  width: 60px;
+  height: 1px;
+  background-color: var(--gold);
+  margin: 20px auto;
+}
+
+.sold-badge {
+  background-color: #8B0000;
+  color: white;
+  padding: 4px 12px;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+}
+
+/* Announcement bar */
+.announcement-bar {
+  background-color: var(--black-soft);
+  color: var(--gold);
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: 'Jost', sans-serif;
+}
+
+/* Product card hover */
+.product-card {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold);
+}
